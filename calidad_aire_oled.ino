@@ -17,12 +17,6 @@
 #include "SSD1306Wire.h" // Librería para salida en pantalla OLED 128
 #include <WiFi.h>
 
-// credenciales de la red WiFi
-//const char* ssid     = "Claro_LANDIVAR";
-//const char* password = "0915851372";
-//const char* ssid     = "Claro_LANDIVAR";
-//const char* password = "0915851372";
-
 // Direcciones I2C de los Sensores
 #define ADDR_CCS811 0x5B 
 #define ADDR_HDC2010 0x41
