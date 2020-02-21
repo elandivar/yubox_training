@@ -4,12 +4,12 @@
 #include <HTTPClient.h>
 
 // Wi-Fi settings
-const char* ssid = "TownPlace_Guest";
+const char* ssid = "";
 const char* password = "";
 
 // Corlysis Setting - click to the database to get those info
-const char* dbName = "cursoyubox";
-const char* dbPassword = "5d7eb8109c671d67f74cf1524225a3c3";
+const char* dbName = "";
+const char* dbPassword = "";
 const unsigned long delayTimeMs = 20000;
 
 // Direcciones I2C de los Sensores
