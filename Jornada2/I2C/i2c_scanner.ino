@@ -1,6 +1,7 @@
 #include <Wire.h>
 
 void setup() {
+  // delay(500); // Usar en caso de problemas
   Serial.begin (9600);
   Serial.println ("I2C scanner. Escaneando dispositivos I2C...");
   byte count = 0;
