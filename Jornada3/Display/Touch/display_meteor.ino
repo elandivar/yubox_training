@@ -19,27 +19,31 @@ void setup() {
 
    //Botones
    boton0.attachPush(boton_presionado, &boton0);
-   pronostico0.setText("Pronóstico hoy");
+   pronostico0.setText("Clima hoy");
+   temperatura0.setValue(280);
+   tiempo0.setText("Nublado");
 }
 
 void loop() {
 
       nexLoop(nex_listen_list);
-      temperatura0.setValue(280);
-      tiempo0.setText("Nublado");
 }
 
 void boton_presionado(void *ptr) {
     uint32_t dual_state;
     boton0.getValue(&dual_state);
-    if(dual_state!=0) {
+    if(dual_state!=1) {
         boton0.setText("Ver Mañana");
-        pronostico0.setText("Pronóstico hoy");
+        pronostico0.setText("Clima hoy");
+        temperatura0.setValue(280);
+        tiempo0.setText("Nublado");
         Serial.println("boton presionado");
         Serial.println("Estado HOY");
     } else {
         boton0.setText("Ver Hoy");
-        pronostico0.setText("Pronóstico mañana");
+        pronostico0.setText("Clima mañana");
+        temperatura0.setValue(322);
+        tiempo0.setText("Soleado");
         Serial.println("boton presionado");
         Serial.println("Estado MAÑANA");
     }
