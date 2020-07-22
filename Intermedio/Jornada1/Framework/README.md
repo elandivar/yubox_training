@@ -15,4 +15,7 @@ Uso:
 ----
 
   - Compilar el programa yubox-framework-test.ino 
+  - Conectarse a la señal del Yubox desde el menú de red de su computador (ver imagen abajo)
   - Visitar desde un navegador la interfaz Web del Yubox Node
+
+![Con. OTA](imagenOTA.png)
