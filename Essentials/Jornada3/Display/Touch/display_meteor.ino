@@ -14,7 +14,7 @@ NexTouch *nex_listen_list[] = {&boton0, NULL};
 
 void setup() {
    Serial.begin(115200);
-   Serial2.begin(115200, SERIAL_8N1, 25, 32); 
+   Serial2.begin(9600, SERIAL_8N1, 25, 32); 
    nexInit();
 
    //Botones
