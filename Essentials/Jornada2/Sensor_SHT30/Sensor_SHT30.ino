@@ -5,7 +5,7 @@ ClosedCube_SHT31D sht3xd;
 
 void setup()
 {
-	Wire.begin(25,32);
+	Wire.begin(32,25);
 
 	Serial.begin(115200);
 
