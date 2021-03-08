@@ -8,11 +8,11 @@ NexTouch *nex_listen_list[] = {&b0, NULL};
 
 void setup() {
    Serial.begin(115200);
-   Serial2.begin(9600, SERIAL_8N1, 25, 32); 
-   nexInit();
+   Serial2.begin(250000, SERIAL_8N1, 25, 32); 
+   nexInit(0);
 
    //Botones
-   b0.attachPush(boton_presionado, &0);
+   b0.attachPush(boton_presionado, &b0);
    t0.setText("Hola, presiona el boton");
 }
 
