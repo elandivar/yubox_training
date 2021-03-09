@@ -7,3 +7,5 @@ Se debe descargar el archivo NextionYubox.zip, descomprimirlo y colocar esa carp
 
 nextion_firmware_24.tft: Para pantallas Nextion Basic de 2.4 pulgadas
 nextion_firmware_28.tft: Para pantallas Nextion Basic de 2.8 pulgadas
+
+3) Compilar y transferir el sketch Touch.ino 
