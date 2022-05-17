@@ -6,6 +6,7 @@ const char * wifi_password = "0915851372";
 
 void setup() {
   WiFi.mode(WIFI_AP_STA);
+  //WiFi.softAP(ssidAP, passwordAP):
   WiFi.begin(wifi_ssid, wifi_password);
   while (WiFi.status() != WL_CONNECTED) { delay(1000); }
 
