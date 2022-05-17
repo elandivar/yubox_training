@@ -17,12 +17,6 @@
 #include "SSD1306Wire.h" // Librería para salida en pantalla OLED 128
 #include <WiFi.h>
 
-// credenciales de la red WiFi
-//const char* ssid     = "Claro_LANDIVAR";
-//const char* password = "0915851372";
-//const char* ssid     = "Claro_LANDIVAR";
-//const char* password = "0915851372";
-
 // Direcciones I2C de los Sensores
 #define ADDR_CCS811 0x5B 
 #define ADDR_HDC2010 0x41
@@ -103,22 +97,11 @@ void setup() {
   delay(1000);
   display.clear();
 
-  CCS811Core::status returnCode = mySensor.begin();
-  if (returnCode != CCS811Core::SENSOR_SUCCESS)
-  {
-    Serial.println(".begin() returned with an error.");
-    while (1); //Hang if there was a problem.
-  }
+  mySensor.begin();
 
   // Initialize I2C communication
   sensor.begin();
   sensor.reset(); // Begin with a device reset
-  // Set up the comfort zone
-  // sensor.setHighTemp(28);         // High temperature of 28C
-  // sensor.setLowTemp(22);          // Low temperature of 22C
-  // sensor.setHighHumidity(55);     // High humidity of 55%
-  // sensor.setLowHumidity(40);      // Low humidity of 40%
-  // Configure Measurements
   sensor.setMeasurementMode(TEMP_AND_HUMID);  // Set measurements to temperature and humidity
   sensor.setRate(ONE_HZ);                     // Set measurement frequency to 1 Hz
   sensor.setTempRes(FOURTEEN_BIT);
@@ -235,7 +218,7 @@ void loop() {
   }
   
   // Wait 1 second for the next reading
-  delay(1000);
+  delay(5500);
   
 }
 
