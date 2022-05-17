@@ -69,6 +69,7 @@
 // SH1106Brzo  display(0x3c, D3, D5);
 
 // Initialize the OLED display using Wire library
+// Curso Yubox: No olvidar cambiar D3 y D5 por los valores correctos de los pines I2C
 SSD1306Wire  display(0x3c, D3, D5);
 // SH1106Wire display(0x3c, D3, D5);
 
