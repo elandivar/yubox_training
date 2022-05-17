@@ -22,4 +22,6 @@ void loop() {
 
 void boton_presionado(void *ptr) {
     t0.setText("Bien!!!!");
+    delay(3000);
+    t0.setText("Presiona de nuevo");
 }
