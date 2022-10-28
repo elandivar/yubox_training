@@ -1,5 +1,11 @@
+
+
 /*
- * Connect the SD card to the following pins:
+
+BORRAR ESTE ARCHIVO, USAR EL OTRO
+
+
+* Connect the SD card to the following pins:
  *
  * SD Card | ESP32
  *    D2       -
